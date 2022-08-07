@@ -8,9 +8,52 @@
     <link href="/styles.css" rel="stylesheet"/>
 </head>
 <body>
+    <header>
+        <h1 class="heading">Stock Profit & Loss Calculator</h1>
+    </header>
+
     <main>
-        <h1 class="heading">Srock Profit & Loss Calculator</h1>
+        <div class="input-container-div">
+            <label class="input-label"> Initial Price
+                <input class="input" id="initial-price-input" type="number" placeholder="Enter Initial Price of the Stocks">
+            </label>
+            <label class="input-label"> Quantity of Stocks
+                <input class="input" id="stocks-quantity-input" type="number" placeholder="Enter the Number of Stocks bought">
+            </label>
+            <label class="input-label"> Current Price
+                <input class="input" id="current-price-input" type="number" placeholder="Enter the Current Price of the Stocks">
+            </label>
+        </div>
+
+        <button id="submit-btn">Tell Me!</button>
+
+        <div id="output-background-div">
+            <div id="output-div"></div>
+        </div>
     </main>
+
+    <footer class="footer">
+        <p>If you enjoyed this fun app, check out my other projects too! <a class="link" href="https://amanharsh.netlify.app/projects.html" target="_blank">Click here</a> to see my other projects.</p>
+
+        <div class="footer-header">Connect to me on my socials</div>
+        <ul>
+            <li class="list-item-inline">
+                <a class="social-link" href="https://github.com/AmanHarsh02" target="_blank">
+                    GitHub
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="social-link" href="https://linkedin.com/in/aman-harsh" target="_blank">
+                    LinkedIn
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="social-link" href="https://twitter.com/amanharsh0203" target="_blank">
+                    Twitter
+                </a>
+            </li>
+        </ul>
+    </footer>
     
     <script src="/app.js" type="text/javascript"></script>
 </body>
