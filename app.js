@@ -71,7 +71,12 @@ function clickHandler() {
     document.getElementById("output-div").style.color = "";
 
     if (initial && quantity && current) {
-        calculateProfitOrLoss(initial, quantity, current);
+        if(initial < 0 || quantity < 0 || current < 0) {
+            const message = "Please be positive & enter positive values 😀"
+            showOutputMessage(message);
+        } else {
+            calculateProfitOrLoss(initial, quantity, current);
+        }
     } else {
         const message = "Please enter all the values."
         showOutputMessage(message);
