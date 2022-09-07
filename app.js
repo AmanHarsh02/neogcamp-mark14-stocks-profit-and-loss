@@ -7,7 +7,7 @@ const outputRef = document.querySelector("#output-div");
 function calculateProfitOrLoss(initial, quantity, current) {
     if (current > initial) {
         var profitValue = (current - initial) * quantity;
-        var profitPercentage = (profitValue / initial) * 100;
+        var profitPercentage = (profitValue/ (initial * quantity)) * 100;
 
         const message = `Whoa! You invested in great stocks. 💯\nThe profit is ${profitValue.toFixed(2)} and the percent is ${profitPercentage.toFixed(2)}% 📈`;
 
@@ -25,7 +25,7 @@ function calculateProfitOrLoss(initial, quantity, current) {
 
     } else if (initial > current) {
         var lossValue = (initial - current) * quantity;
-        var lossPercentage = (lossValue / initial) * 100;
+        var lossPercentage = (lossValue/ (initial * quantity)) * 100;
 
         const message = `Oops! You should look for some good stocks 😔.\nThe loss is ${lossValue.toFixed(2)} and the percent is ${lossPercentage.toFixed(2)}% 📉`;
 
